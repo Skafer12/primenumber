@@ -1,0 +1,15 @@
+def prime():
+    x = int(input('Write your number: '))
+    z = []
+    for a in range(2, x):
+        if x == 1:
+            print('Your number isn\'t prime')
+            break
+        if x % a == 0:
+            z.append(a)
+    if len(z) > 0:
+        print('Your number is not prime')
+    else:
+        print('Your number is prime')
+
+prime()
