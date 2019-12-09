@@ -1,0 +1,12 @@
+size = int(input('Board size: '))
+
+def boarddraw():
+    def drawing():
+        print(' ---' * size)
+        print('|   ' * (size+1))
+    
+    for i in range(size):
+        drawing()
+    print(' ---' * size)
+
+boarddraw()
